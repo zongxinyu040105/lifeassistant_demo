@@ -42,6 +42,32 @@ def login():
     finally:
         cursor.close()
         db.close()
+
+def registration():
+    name = entry_name.get()
+    password = entry_password.get()
+
+    db = connect_to_db()
+    cursor = db.cursor()
+
+    try:
+
+        cursor.execute("SELECT * FROM user_data WHERE name = %s", (name,))
+        existing_user = cursor.fetchone()
+
+        if existing_user:
+           messagebox.showerror("Error", "Username already taken!")
+        else:
+           cursor.execute("INSERT INTO user_data (name, password) VALUES (%s, %s)", (name, password))
+           db.commit()  # Commit the transaction
+           messagebox.showinfo("Success", "User registered successfully!")
+        
+    except pymysql.MySQLError as err:
+        messagebox.showerror("Database Error", f"Error: {err}")
+    finally:
+        cursor.close()
+        db.close()
+
 def successlogin():
     new_window = tk.Tk() 
     new_window.title("assitent")
@@ -61,7 +87,7 @@ def successlogin():
 
 root = tk.Tk()
 root.title("logweb")
-
+root.geometry("200x160")
 
 label_name = tk.Label(root, text="name:")
 label_name.pack()
@@ -78,21 +104,7 @@ entry_password.pack()
 login_button = tk.Button(root, text="log", command=login)
 login_button.pack()
 
+login_button = tk.Button(root, text="registration", command=registration)
+login_button.pack()
 
 root.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

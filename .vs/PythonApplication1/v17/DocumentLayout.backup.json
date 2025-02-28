@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|solutionrelative:PythonApplication1\\PythonApplication1.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\calculater.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|solutionrelative:PythonApplication1\\calculater.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\deepseek.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|solutionrelative:PythonApplication1\\deepseek.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\weather.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|solutionrelative:PythonApplication1\\weather.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\calculater.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F8B46249-03D4-4E6E-87D4-C1C1AE084251}|PythonApplication1\\PythonApplication1.pyproj|solutionrelative:PythonApplication1\\calculater.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,20 +34,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "deepseek.py",
               "DocumentMoniker": "D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\deepseek.py",
               "RelativeDocumentMoniker": "PythonApplication1\\deepseek.py",
               "ToolTip": "D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\deepseek.py",
               "RelativeToolTip": "PythonApplication1\\deepseek.py",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACwAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-02-27T11:03:25.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "calculater.py",
               "DocumentMoniker": "D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\calculater.py",
               "RelativeDocumentMoniker": "PythonApplication1\\calculater.py",
@@ -60,13 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "weather.py",
               "DocumentMoniker": "D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\weather.py",
               "RelativeDocumentMoniker": "PythonApplication1\\weather.py",
               "ToolTip": "D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\weather.py",
               "RelativeToolTip": "PythonApplication1\\weather.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-02-27T04:42:30.815Z",
               "EditorCaption": ""
@@ -77,9 +77,9 @@
               "Title": "PythonApplication1.py",
               "DocumentMoniker": "D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\PythonApplication1.py",
               "RelativeDocumentMoniker": "PythonApplication1\\PythonApplication1.py",
-              "ToolTip": "D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\PythonApplication1.py*",
-              "RelativeToolTip": "PythonApplication1\\PythonApplication1.py*",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEEAAAARAAAAAAAAAA==",
+              "ToolTip": "D:\\\u6211\u306E\u7B14\u8BB0\u62A5\u544A\u548C\u9879\u76EE\\test\\PythonApplication1\\PythonApplication1\\PythonApplication1.py",
+              "RelativeToolTip": "PythonApplication1\\PythonApplication1.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-02-26T12:47:42.413Z",
               "EditorCaption": ""
