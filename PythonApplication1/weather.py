@@ -15,9 +15,9 @@ def get_weather(api_key, city_code):
         raise Exception("Failed: {}".format(response.status_code))
 
 
-def show_weather():
+def show_weather(city_code):
     api_key = "8e8bac5464e877687c853dc0cc2317cd"  
-    city_code = "370402"  
+    #city_code = "370402"  
     try:
         weather_info = get_weather(api_key, city_code)
         weather_message = (
