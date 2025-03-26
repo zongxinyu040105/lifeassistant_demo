@@ -6,6 +6,7 @@ import calculater
 import deepseek
 import tkinter as tk
 from tkinter import messagebox
+from tkinter import ttk
 import pymysql
 
 
@@ -104,15 +105,14 @@ def successlogin():
     entry_cname.pack()#
     cname = entry_cname.get()
 
-
     #btn_weather = tk.Button( new_window, text="Show Weather", command=weather.show_weather)
     btn_weather = tk.Button( new_window, text="Show Weather", command=lambda: cname_id(entry_cname.get()))
     btn_weather.pack(pady=10)
 
-    btn_calculator = tk.Button( new_window, text="Open Calculator", command=calculater.open_calculator)
+    btn_calculator = tk.Button( new_window, text="Open Calculator", command=calculater.Calculator.open_calculator_window)
     btn_calculator.pack(pady=10)
 
-    btn_chat = tk.Button( new_window, text="Open Chat", command=deepseek.deepseek.open_chat_window)  
+    btn_chat = tk.Button( new_window, text="Deep seek", command=deepseek.deepseek.open_chat_window)  
     btn_chat.pack(pady=10)
 
     #new_window.mainloop()
@@ -122,25 +122,39 @@ def successlogin():
 
 
 root = tk.Tk()
-root.title("logweb")
-root.geometry("200x160")
+root.title("LogWeb") 
+root.geometry("380x200")  
+root.style = ttk.Style() 
+root.style.theme_use('clam')  
 
-label_name = tk.Label(root, text="name:")
-label_name.pack()
-entry_name = tk.Entry(root)
-entry_name.pack()
-
-
-label_password = tk.Label(root, text="password:")
-label_password.pack()
-entry_password = tk.Entry(root)
-entry_password.pack()
+grid = ttk.Frame(root)
+grid.pack(padx=10, pady=5)
 
 
-login_button = tk.Button(root, text="log", command=login)
-login_button.pack()
+ttk.Label(grid, text="Name:").grid(row=0, column=0,padx=10, pady=20, sticky=tk.W)
+entry_name = ttk.Entry(grid, width=25)
+entry_name.grid(row=0, column=1, padx=5, pady=5)
 
-login_button = tk.Button(root, text="registration", command=registration)
-login_button.pack()
+
+ttk.Label(grid, text="Password:").grid(row=1, column=0, sticky=tk.W)
+entry_password = ttk.Entry(grid, 
+                           width=25, 
+                           show='*',)
+entry_password.grid(row=1, column=1, padx=5, pady=5)
+
+
+#login_icon = tk.PhotoImage(file="login.png")  
+#reg_icon = tk.PhotoImage(file="register.png")
+
+ttk.Button(grid,         
+          text="Login", 
+          command=login,
+          compound=tk.LEFT).grid(row=2, column=0,padx=35, pady=30)
+
+ttk.Button(grid, 
+
+          text="Registration", 
+          command=registration,
+          compound=tk.LEFT).grid(row=2, column=1, pady=30)
 
 root.mainloop()
