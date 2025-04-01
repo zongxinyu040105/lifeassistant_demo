@@ -4,11 +4,12 @@ import json
 import weather
 import calculater
 import deepseek
+import cvface
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
 import pymysql
-
+import cvface
 
 def connect_to_db():
     return pymysql.connect(
@@ -115,6 +116,14 @@ def successlogin():
     btn_chat = tk.Button( new_window, text="Deep seek", command=deepseek.deepseek.open_chat_window)  
     btn_chat.pack(pady=10)
 
+    label_ppath = tk.Label(new_window, text="image path:")#
+    label_ppath.pack()#
+    entry_ppath = tk.Entry(new_window)#
+    entry_ppath.pack()#
+    ppath = entry_ppath.get()
+
+    btn_cvface = tk.Button( new_window, text="CV face", command= lambda:cvface.ImageProcessor.open_cvface_window(entry_ppath.get()))  
+    btn_cvface.pack(pady=10)
     #new_window.mainloop()
 
 

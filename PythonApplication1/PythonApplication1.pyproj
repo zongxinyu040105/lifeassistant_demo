@@ -27,6 +27,9 @@
     <Compile Include="deepseek.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="cvface.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="weather.py">
       <SubType>Code</SubType>
     </Compile>
